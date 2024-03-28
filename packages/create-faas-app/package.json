@@ -1,0 +1,35 @@
+{
+  "name": "create-faas-app",
+  "version": "0.0.4-beta.17",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "create-faas-app": "index.js"
+  },
+  "homepage": "https://faasjs.com/doc/create-faas-app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "packages/create-faas-app"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "scripts": {
+    "build": "tsup-node src/index.ts --config ../../tsup.config.json"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "dependencies": {
+    "commander": "*",
+    "enquirer": "*",
+    "lodash": "*"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  }
+}

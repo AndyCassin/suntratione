@@ -1,0 +1,31 @@
+{
+  "name": "@faasjs/browser",
+  "version": "0.0.4-beta.17",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "homepage": "https://faasjs.com/doc/browser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "packages/browser"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "scripts": {
+    "build": "tsup-node src/index.ts --config ../../tsup.config.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@faasjs/types": "0.0.4-beta.17"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@faasjs/react",
+  "version": "0.0.4-beta.17",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "homepage": "https://faasjs.com/doc/react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "scripts": {
+    "build": "tsup src/index.tsx --config ../../tsup.config.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@faasjs/browser": "0.0.4-beta.17"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "@preact/signals-react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "react": "*",
+    "@preact/signals-react": "*",
+    "@types/use-sync-external-store": "*"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  }
+}

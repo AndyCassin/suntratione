@@ -1,0 +1,65 @@
+{
+  "name": "suntratione",
+  "version": "1.0.0",
+  "devDependencies": {
+    "tsup": "*",
+    "turbo": "^1.10.16",
+    "typedoc": "*",
+    "typedoc-plugin-markdown": "*",
+    "typescript": "*",
+    "@biomejs/biome": "*"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "jest": {
+    "transform": {
+      ".(jsx|tsx?)": "./packages/jest/index.js"
+    },
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "/lib/",
+      "/tmp/",
+      "/examples/",
+      "/benchmarks/",
+      "/packages/deployer/"
+    ],
+    "collectCoverageFrom": [
+      "**/packages/**/*.ts",
+      "**/packages/**/*.tsx",
+      "!**/local/**"
+    ],
+    "testRegex": "/*\\.test\\.tsx?$",
+    "coveragePathIgnorePatterns": [
+      "/lib/",
+      "/dist/",
+      "/tmp/",
+      "/__tests__/",
+      "/examples/",
+      "!*.d.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "@faasjs/jest",
+      "@faasjs/(.*)": "<rootDir>/packages/$1/src",
+      "lodash-es": "lodash"
+    },
+    "setupFiles": [
+      "./packages/jest/jest.setup.js"
+    ],
+    "setupFilesAfterEnv": [
+      "./packages/ant-design/src/__tests__/jest.setup"
+    ],
+    "testEnvironmentOptions": {
+      "customExportConditions": [
+        "node",
+        "node-addons"
+      ]
+    }
+  },
+  "author": "CorineLang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndyCassin/suntratione.git"
+  },
+  "homepage": "https://github.com/AndyCassin/suntratione.git"
+}

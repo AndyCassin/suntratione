@@ -1,0 +1,36 @@
+{
+  "name": "@faasjs/http",
+  "version": "0.0.4-beta.17",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.cjs",
+  "homepage": "https://faasjs.com/docs/http",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "packages/http"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "scripts": {
+    "build": "tsup-node src/index.ts --config ../../tsup.config.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@faasjs/func": "0.0.4-beta.17",
+    "@faasjs/logger": "0.0.4-beta.17"
+  },
+  "devDependencies": {
+    "@faasjs/func": "0.0.4-beta.17",
+    "@faasjs/logger": "0.0.4-beta.17"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  }
+}

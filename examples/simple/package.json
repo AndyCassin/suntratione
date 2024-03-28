@@ -1,0 +1,21 @@
+{
+  "name": "simple",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --silent --maxWorkers=1"
+  },
+  "dependencies": {
+    "faasjs": "file:../../packages/faasjs"
+  },
+  "jest": {
+    "verbose": false,
+    "transform": {
+      ".(jsx|tsx?)": "@faasjs/jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": ["**/*.ts"],
+    "testRegex": "/*\\.test\\.ts$",
+    "modulePathIgnorePatterns": ["/lib/", "/tmp/"]
+  }
+}

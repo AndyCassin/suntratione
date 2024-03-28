@@ -1,0 +1,13 @@
+{
+  "excludePrivate": true,
+  "excludeExternals": true,
+  "exclude": ["**/__tests__/**"],
+  "plugin": ["typedoc-plugin-markdown"],
+  "githubPages": false,
+  "hideBreadcrumbs": true,
+  "cleanOutputDir": false,
+  "disableSources": true,
+  "compilerOptions": {
+    "skipLibCheck": true
+  }
+}

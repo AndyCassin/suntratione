@@ -1,0 +1,45 @@
+{
+  "name": "@faasjs/knex",
+  "version": "0.0.4-beta.17",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://faasjs.com/doc/knex",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "packages/knex"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "scripts": {
+    "build": "tsup-node src/index.ts --config ../../tsup.config.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@faasjs/deep_merge": "0.0.4-beta.17",
+    "@faasjs/func": "0.0.4-beta.17",
+    "@faasjs/logger": "0.0.4-beta.17"
+  },
+  "peerDependencies": {
+    "knex": "*"
+  },
+  "devDependencies": {
+    "knex": "*",
+    "@types/mysql": "*",
+    "@types/node": "*",
+    "@types/pg": "*",
+    "mysql": "*",
+    "pg": "*",
+    "better-sqlite3": "*",
+    "tsd": "*"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  }
+}

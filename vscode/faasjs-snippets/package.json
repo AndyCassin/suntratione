@@ -1,0 +1,33 @@
+{
+  "name": "faasjs-snippets",
+  "displayName": "FaasJS Snippets",
+  "description": "Snippets for FaasJS",
+  "publisher": "faasjs",
+  "version": "0.0.8",
+  "license": "MIT",
+  "homepage": "https://faasjs.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "vscode/faasjs-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "icon": "logo.jpg",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/func.code-snippets"
+      }
+    ]
+  }
+}

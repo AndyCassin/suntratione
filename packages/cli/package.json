@@ -1,0 +1,47 @@
+{
+  "name": "@faasjs/cli",
+  "version": "0.0.4-beta.17",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "faas": "dist/index.js"
+  },
+  "homepage": "https://faasjs.com/doc/cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faasjs/faasjs.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/faasjs/faasjs/issues"
+  },
+  "funding": "https://github.com/sponsors/faasjs",
+  "scripts": {
+    "build": "tsup-node src/index.ts --config ../../tsup.config.json"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "dependencies": {
+    "@faasjs/test": "0.0.4-beta.17",
+    "commander": "*",
+    "enquirer": "*",
+    "glob": "*",
+    "lodash": "*"
+  },
+  "peerDependencies": {
+    "@faasjs/deployer": "0.0.4-beta.17",
+    "@faasjs/func": "0.0.4-beta.17",
+    "@faasjs/server": "0.0.4-beta.17"
+  },
+  "devDependencies": {
+    "@faasjs/deployer": "0.0.4-beta.17",
+    "@faasjs/func": "0.0.4-beta.17",
+    "@faasjs/server": "0.0.4-beta.17"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "auth",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --silent --maxWorkers=1"
+  },
+  "dependencies": {
+    "faasjs": "beta",
+    "@faasjs/knex": "beta",
+    "sqlite3": "*"
+  },
+  "jest": {
+    "verbose": false,
+    "transform": {
+      ".(jsx|tsx?)": "@faasjs/jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": ["**/*.ts"],
+    "testRegex": "/*\\.test\\.ts$",
+    "modulePathIgnorePatterns": ["/lib/", "/tmp/"],
+    "setupFilesAfterEnv": ["@faasjs/test/lib/jest.setup.js", "./jest.setup.ts"]
+  }
+}
